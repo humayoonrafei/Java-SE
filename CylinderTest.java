@@ -11,8 +11,8 @@ class  Cylinder
     }
     public Cylinder(int r,int h)
     {
-        radius=r;
-        height=h;
+        setRadius(r);   // so the negative Radius will be set to zero when the the negative value is passed to the constructor  
+        setHeight(h);   //  so the negative height will be set to zero  when the negtive value is passed to the constructor.
     }
     public int getHeight()
     {
@@ -39,8 +39,8 @@ class  Cylinder
     }
     public void setDimensions(int h,int r)
     {
-        height=h;
-        radius=r;
+       setRadius(r);   // so the negative Radius will be set to zero when the the negative value is passed to the constructor  
+       setHeight(h);  // so the negative Radius will be set to zero when the the negative value is passed to the constructor  
     }
     
     public double lidArea()
